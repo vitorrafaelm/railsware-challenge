@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import User from "../../../public/assets/Contacts.svg";
-import Lock from "../../../public/assets/Shape.svg";
 
 export const PageContainer = styled.main`
   display: flex;
@@ -47,24 +46,6 @@ export const FormContainer = styled.form`
   }
 `;
 
-export const BoxForgotPassword = styled.section`
-  display: flex;
-  justify-content: flex-end;
-
-  padding-top: 0.5rem;
-  cursor: pointer;
-`;
-
-export const ForgotPasswordText = styled.span`
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 19px;
-
-  color: #1a4f8b;
-`;
-
 export const ButtonContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -82,15 +63,16 @@ export const AlternativeText = styled.span`
   font-size: 16px;
   line-height: 19px;
 
+  text-align: center;
+
+  margin-top: 10rem;
+
   color: #b0b0b0;
 `;
 
-export const ButtonGroup = styled.div`
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-
-    margin-top: 2rem;
+export const LoginText = styled.a`
+    margin-left: 0.5rem;
+    color: #1A4F8B; 
 `; 
 
 export const IconContainer = styled.div<{ margin?: string}>`
@@ -107,7 +89,3 @@ export const IconContainer = styled.div<{ margin?: string}>`
 
 export const UserIcon = styled(User)`
 `;
-
-export const LockContact = styled(Lock)`
-  width: 15.67px;
-`; 

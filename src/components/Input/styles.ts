@@ -1,5 +1,10 @@
 import styled from "styled-components";
-import User from "../../../public/assets/Contacts.svg";
+
+interface InputProps {
+  width: number;
+  height: number;
+  textIdent: number;
+}
 
 export const InputContainer = styled.div`
   display: flex;
@@ -14,36 +19,24 @@ export const InputContainer = styled.div`
   }
 `;
 
-export const IconContainer = styled.div`
-  position: absolute;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  margin-right: 19rem;
-  margin-top: 0.7rem;
-`;
-
-export const UserIcon = styled(User)``;
-
-export const InputText = styled.input`
-  width: 344px;
-  height: 50px;
+export const InputText = styled.input<InputProps>`
+  width: ${({ width }) => width}px;
+  height: ${({ height }) => height}px;
 
   background: #ffffff;
   border: 1px solid #c3c3c3;
   border-radius: 5px;
 
   outline: 0;
-  text-indent: 2.5rem;
+  text-indent: ${({ textIdent }) => textIdent}px;
 
   :focus {
     border: 1px solid #1a4f8b;
   }
 
-  & ${UserIcon}:focus {
-    color: #1a4f8b;
+  ::-webkit-input-placeholder {
+    font-family: "Roboto";
+    font-weight: 400;
   }
 
   :focus::-webkit-input-placeholder {

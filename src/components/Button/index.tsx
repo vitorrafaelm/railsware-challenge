@@ -25,7 +25,7 @@ export function Button({
       borderRadius={borderRadius}
       type={type}
     >
-      <Text>LOG IN</Text>
+      <Text>{title}</Text>
     </MainButton>
   );
 }
