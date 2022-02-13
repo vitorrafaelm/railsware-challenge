@@ -7,9 +7,13 @@ Node.js installed on your machine. If you don't have it yet, please access https
 and install it. 
 
 Then, what you have to do is: 
+
 1º Clone the git repository by executing the flowing command: 'git clone git@github.com:vitorrafaelm/railsware-challenge.git'; 
+
 2º Enter in project's folders and run yarn (This command will install all the dependecies you need); 
+
 3º Run yarn dev 
+
 4º Access http://localhost:3000/login, http://localhost:3000/recover_password and http://localhost:3000/upgrade to see all three
 pages I did. 
 
